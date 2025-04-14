@@ -1,0 +1,57 @@
+driver_state_task:
+  description: >
+    Use base64_image_classifier_tool with instructions:
+    "Classify driver state as 'alert', 'microsleep', or 'yawning'."
+    The image path is {driver_image}.
+  expected_output: >
+    A single phrase indicating the driver’s state (e.g., "driver is <state>").
+  agent: driver_state_agent
+
+child_occupancy_task:
+  description: >
+    Use base64_image_classifier_tool with instructions:
+    "Check if a child/children is/are present in the vehicle. If there is/are child/children check whether they are properly seated or cause distraction to the driver."
+    The image path is {child_image}.
+  expected_output: >
+    A statement indicating child (or children) presence or not. If children are present, give a statement indicating whether they are properly seated or causing distraction to the driver or not.
+  agent: child_occupancy_agent
+
+phone_usage_task:
+  description: >
+    Use base64_image_classifier_tool with instructions:
+    "Determine if the driver is using a phone."
+    The image path is {phone_image}.
+  expected_output: >
+    A clear statement such as "The driver is using a phone" or "No phone in use".
+  agent: phone_usage_agent
+  
+seatbelt_usage_task:
+  description: >
+    Use base64_image_classifier_tool with instructions:
+    "Inspect seatbelt usage. Return a summary of seatbelt usage for all visible occupants."
+    The image path is {seatbelt_image}.
+  expected_output: >
+    A short report listing seatbelt usage for each occupant.
+  agent: seatbelt_usage_agent
+
+alcohol_presence_task:
+  description: >
+    Use base64_image_classifier_tool with instructions:
+    "Detect any signs of alcohol in the vehicle. Return a classification if alcohol is detected or not."
+    The image path is {alcohol_image}.
+  expected_output: >
+    "There is alcohol detected in the car" or "No alcohol detected".
+  agent: alcohol_presence_agent
+
+speed_monitor_task:
+  description: >
+    The current speed is {speed_value} kph, the safe threshold is 100 kph. Evaluate this speed along with the outputs of previous tasks (driver state, child occupancy, phone usage, seatbelt usage, and alcohol detection). If any safety risks are detected, provide a conversational response that addresses these risks directly to the driver. If children are standing or causing distraction, talk to them directly while being friendly, simple, and engaging, while encouraging safety. If no risks are detected, output a brief, positive, and motivational message mentioning only about safe speed, seatbelt usage, and alertness and focus on the road.
+  expected_output: >
+    A conversational summary that highlights any safety concerns or, if all is well, a concise, encouraging message mentioning only about safe speed, seatbelt usage, and alertness.
+  agent: speed_monitor_agent
+  context:
+    - driver_state_task
+    - child_occupancy_task
+    - phone_usage_task
+    - seatbelt_usage_task
+    - alcohol_presence_task
