@@ -38,6 +38,7 @@ Create a new environment `(python 3.10)` and do:
 ```
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install transformers tensorboard
+pip install openai
 ```
 
 Also `pip install` the necessary modules shown in the `files`.
