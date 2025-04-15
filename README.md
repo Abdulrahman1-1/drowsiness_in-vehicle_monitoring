@@ -12,7 +12,7 @@ crewai create crew <your_project_name>
 Replace `<your_project_name>` with your desired project name.
 
 3. Add Your Files  
-Copy and paste the following files into your project directory:
+Find, copy, and paste the following files into your project's src folder:
 - `main.py`
 - `crew.py`
 - `custom_tool.py`
