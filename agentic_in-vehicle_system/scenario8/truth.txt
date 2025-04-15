@@ -1,0 +1,13 @@
+Ground truth:{
+Driver state: The driver is microsleep.
+
+Child occupancy: There are no children in the car.
+
+Phone usage status: The driver is not using a phone.
+
+Seatbelt status: The driver is not fastening the seatbelt.
+
+Alcohol detection status: No alcohol detected in the vehicle.
+
+Speed status: The speed is safe (70 kph).
+}
