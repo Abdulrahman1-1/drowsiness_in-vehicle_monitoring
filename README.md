@@ -29,6 +29,9 @@ Replace `<your_project_name>` with your actual project name.
 5. Image Paths  
 Make sure to update image paths accordingly when testing the system.
 
+6. Run
+Navigate to your project's root directory then type the CLI command: `crewai run'
+
 ---
 
 ## Drowsiness Detection Comparison
