@@ -5,11 +5,11 @@
 Follow the official [installation guide](https://docs.crewai.com/installation)
 
 2. Create Your Project  
-Use the CLI command below to scaffold your CrewAI project:
-```
-crewai create crew <your_project_name>
-```
-Replace `<your_project_name>` with your desired project name.
+   Use the CLI command below to scaffold your CrewAI project:
+   ```
+   crewai create crew <your_project_name>
+   ```
+   Replace `<your_project_name>` with your desired project name.
 
 3. Add Your Files  
 Find, copy, and paste the following files into your project's src folder:
