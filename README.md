@@ -3,30 +3,29 @@
 ## Setup Instructions
 
 1. Install CrewAI  
-Follow the official installation guide:  
-https://docs.crewai.com/installation
+Follow the official [installation guide](https://docs.crewai.com/installation)
 
 2. Create Your Project  
 Use the CLI command below to scaffold your CrewAI project:
-
+```
 crewai create crew <your_project_name>
-
-Replace <your_project_name> with your desired project name.
+```
+Replace `<your_project_name>` with your desired project name.
 
 3. Add Your Files  
 Copy and paste the following files into your project directory:
-- main.py
-- crew.py
-- custom_tool.py
-- agents.yaml
-- tasks.yaml
+- `main.py`
+- `crew.py`
+- `custom_tool.py`
+- `agents.yaml`
+- `tasks.yaml`
 
 4. Update Your Main File  
-In main.py, make sure to import your crew like this:
-
+In `main.py`, make sure to import your crew like this:
+```
 from <your_project_name>.crew import VehicleMonitoringCrew
-
-Replace <your_project_name> with your actual project name.
+```
+Replace `<your_project_name>` with your actual project name.
 
 5. Image Paths  
 Make sure to update image paths accordingly when testing the system.
@@ -36,11 +35,9 @@ Make sure to update image paths accordingly when testing the system.
 ## Drowsiness Detection Comparison
 
 Trained Models:  
-You can download the trained models from this link:  
-https://mbzuaiac-my.sharepoint.com/:f:/g/personal/abdulrahman_almarzooqi_mbzuai_ac_ae/EvQ8EdsW-5hJssT97RrzPkQBiCz2BvkH3qnCg57zUXIrCQ?e=hLsngV
+You can download the trained models [from this link](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/abdulrahman_almarzooqi_mbzuai_ac_ae/EvQ8EdsW-5hJssT97RrzPkQBiCz2BvkH3qnCg57zUXIrCQ?e=hLsngV)
 
 Dataset Source:  
-The dataset used was downloaded from Roboflow:  
-https://universe.roboflow.com/yolo-yvl6h/drowsiness-fatigue_detection/dataset/4
+The dataset used was downloaded from [Roboflow](https://universe.roboflow.com/yolo-yvl6h/drowsiness-fatigue_detection/dataset/4)
 
 Format: Multi-Label Classification
