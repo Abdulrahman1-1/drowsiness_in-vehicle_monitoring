@@ -30,7 +30,7 @@ Replace `<your_project_name>` with your actual project name.
 Make sure to update image paths accordingly when testing the system.
 
 6. Run
-Navigate to your project's root directory then type the CLI command: `crewai run'
+Navigate to your project's root directory then type the CLI command: `crewai run`
 
 ---
 
