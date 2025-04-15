@@ -26,7 +26,7 @@ from <your_project_name>.crew import VehicleMonitoringCrew
 ```
 Replace `<your_project_name>` with your actual project name.
 
-5. scenario8 
+5. scenario8
    Make sure to put the folder 'scenario8' in the project's root directory.
 
 6. Run  
