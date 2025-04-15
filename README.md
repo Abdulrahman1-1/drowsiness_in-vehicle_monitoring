@@ -1,5 +1,6 @@
 ## Agentic In-Vehicle Monitoring System
 
+
 1. Install CrewAI  
 Follow the official [installation guide](https://docs.crewai.com/installation)
 
@@ -32,10 +33,19 @@ Make sure to update image paths accordingly when testing the system.
 
 ## Drowsiness Detection Comparison
 
-Trained Models:  
+### Setup:
+Create a new environment `(python 3.10)` and do:
+```
+conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install transformers tensorboard
+```
+
+Also `pip install` the necessary modules shown in the `files`.
+
+### Trained Models:  
 You can download the trained models [from this link](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/abdulrahman_almarzooqi_mbzuai_ac_ae/EvQ8EdsW-5hJssT97RrzPkQBiCz2BvkH3qnCg57zUXIrCQ?e=hLsngV)
 
-Dataset Source:  
+### Dataset Source:  
 The dataset used was downloaded from [Roboflow](https://universe.roboflow.com/yolo-yvl6h/drowsiness-fatigue_detection/dataset/4)
 
 Format: Multi-Label Classification
