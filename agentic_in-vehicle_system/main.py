@@ -8,12 +8,12 @@ def run():
     crew_instance = VehicleMonitoringCrew().crew()
 
     inputs = {
-        "driver_image":   "dataset/scenarios/scenario20/state.jpg",
-        "child_image":    "dataset/scenarios/scenario20/kids.webp",
-        "phone_image":    "dataset/scenarios/scenario20/phone.jpg",
-        "seatbelt_image": "dataset/scenarios/scenario20/seatbelt.webp",
-        "alcohol_image":  "dataset/scenarios/scenario20/alcohol.jpg",
-        "speed_value": 130
+        "driver_image":   "scenario8/state.jpg",
+        "child_image":    "scenario8/kids.jpg",
+        "phone_image":    "scenario8/phone.webp",
+        "seatbelt_image": "scenario8/seatbelt.jpg",
+        "alcohol_image":  "scenario8/alcohol.jpg",
+        "speed_value": 70
     }
 
     # Kick off the crew
