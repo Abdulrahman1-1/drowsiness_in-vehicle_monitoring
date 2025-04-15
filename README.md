@@ -1,6 +1,4 @@
-# Agentic In-Vehicle Monitoring System
-
-## Setup Instructions
+## Agentic In-Vehicle Monitoring System
 
 1. Install CrewAI  
 Follow the official [installation guide](https://docs.crewai.com/installation)
