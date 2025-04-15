@@ -12,22 +12,22 @@ Follow the official [installation guide](https://docs.crewai.com/installation)
    Replace `<your_project_name>` with your desired project name.
 
 3. Add Your Files  
-Find, copy, and paste the following files into your project's src folder:
-- `main.py`
-- `crew.py`
-- `custom_tool.py`
-- `agents.yaml`
-- `tasks.yaml`
+   Find, copy, and paste the following files into your project's src folder:
+   - `main.py`
+   - `crew.py`
+   - `custom_tool.py`
+   - `agents.yaml`
+   - `tasks.yaml`
 
 4. Update Your Main File  
-In `main.py`, make sure to import your crew like this:
-```
-from <your_project_name>.crew import VehicleMonitoringCrew
-```
-Replace `<your_project_name>` with your actual project name.
+   In `main.py`, make sure to import your crew like this:
+   ```
+   from <your_project_name>.crew import VehicleMonitoringCrew
+   ```
+   Replace `<your_project_name>` with your actual project name.
 
 5. scenario8  
-Make sure to put the folder `scenario8` in the project's root directory.
+   Make sure to put the folder `scenario8` in the project's root directory.
 
 6. Run  
    Navigate to your project's root directory then type the CLI command: `crewai run`
